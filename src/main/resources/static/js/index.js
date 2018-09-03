@@ -113,12 +113,7 @@ function onOffer(error, offerSdp) {
 		return "error";
 
     if($('input[name="rec"]:checked').val() == 'Record'){
-      var message = {
-      		id : 'start',
-      		sdpOffer : offerSdp,
-      		videourl : document.getElementById('videourl').value,
-      		record : true
-      	}
+         alert("Recording of video is not supported in this branch.");
     } else{
       var message = {
     		id : 'start',
